@@ -1,13 +1,36 @@
 .types-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .pokemon-card {
   display: flex;
   width: 25%;
   flex-direction: column;
-  border: 1px solid #919191;
+  /* border: 1px solid #919191; */
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+}
+
+.pokemon-card:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.bounce:hover {
+  animation-name: bounce;
+  animation-timing-function: ease;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .sprite-card {
@@ -17,12 +40,8 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
-  background-color: rgb(198, 219, 238);
-}
-
-img:hover {
-  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  width: 100%;
+  background-color: #f2f2f2;
 }
 
 .pokemon-name {
@@ -47,8 +66,14 @@ img:hover {
 }
 
 .list-container {
-  margin-top: 5rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.pokemon-content {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  padding-left: 1rem;
 }

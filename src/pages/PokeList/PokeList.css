@@ -1,3 +1,4 @@
 .pokeList-container {
-  display: "flex";
+  margin: 1em 15em 0 15em;
+  height: 100vh;
 }

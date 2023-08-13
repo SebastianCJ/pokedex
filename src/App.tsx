@@ -1,9 +1,11 @@
 import "./App.css";
 import { PokeListPage } from "./pages/PokeList";
+import NavBar from "./components/nav/NavBar";
 
 function App() {
   return (
-    <div className="App">
+    <div>
+      <NavBar />
       <PokeListPage />
     </div>
   );

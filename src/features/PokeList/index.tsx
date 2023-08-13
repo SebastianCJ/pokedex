@@ -7,6 +7,7 @@ export const PokeList = () => {
     <div className="list-container">
       {[1, 2, 3].map((number: any) => (
         <Pokemon
+          key={number}
           pokemon={{
             name: "Bulbasaur",
             sprite:
