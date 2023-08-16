@@ -46,7 +46,7 @@ test("Should bounce on hover", async () => {
   const pokemonCard = screen.getByLabelText("pokemon-info-card");
 
   userEvent.hover(pokemonCard);
-
+  screen.debug(pokemonCard, 10000);
   await waitFor(() => {
     expect(screen.getByLabelText("pokemon-info-card")).toHaveStyle(
       "box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5"
