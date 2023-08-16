@@ -1,5 +1,5 @@
 import "./App.css";
-import { PokeListPage } from "./pages/PokeList";
+import { PokeListPage } from "./pages/PokeList/PokeListPage";
 import NavBar from "./components/nav/NavBar";
 
 function App() {
